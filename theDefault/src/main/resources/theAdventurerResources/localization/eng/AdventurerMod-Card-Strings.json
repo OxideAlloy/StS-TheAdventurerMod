@@ -1,6 +1,15 @@
 {
-  "theAdventurer:DefaultCommonAttack": {
+  "theAdventurer:Strike_TA": {
     "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+
+
+
+
+  "theAdventurer:DefaultCommonAttack": {
+    "NAME": "DefaultStrike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
   },
   "theAdventurer:DefaultCommonSkill": {
