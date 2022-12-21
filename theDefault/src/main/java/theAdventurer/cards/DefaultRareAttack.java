@@ -8,10 +8,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
-import theAdventurer.DefaultMod;
-import theAdventurer.characters.TheDefault;
+import theAdventurer.TheAdventurerMod;
+import theAdventurer.characters.TheAdventurer;
 
-import static theAdventurer.DefaultMod.makeCardPath;
+import static theAdventurer.TheAdventurerMod.makeCardPath;
 
 public class DefaultRareAttack extends AbstractDynamicCard {
 
@@ -24,7 +24,7 @@ public class DefaultRareAttack extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = DefaultMod.makeID(DefaultRareAttack.class.getSimpleName());
+    public static final String ID = TheAdventurerMod.makeID(DefaultRareAttack.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     // /TEXT DECLARATION/
@@ -35,7 +35,7 @@ public class DefaultRareAttack extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
     private static final int COST = 2;
 

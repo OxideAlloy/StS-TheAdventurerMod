@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
-import theAdventurer.DefaultMod;
-import theAdventurer.characters.TheDefault;
+import theAdventurer.TheAdventurerMod;
+import theAdventurer.characters.TheAdventurer;
 
-import static theAdventurer.DefaultMod.makeCardPath;
+import static theAdventurer.TheAdventurerMod.makeCardPath;
 
 public class DefaultSecondMagicNumberSkill extends AbstractDynamicCard {
 
@@ -29,7 +29,7 @@ public class DefaultSecondMagicNumberSkill extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultSecondMagicNumberSkill.class.getSimpleName());
+    public static final String ID = TheAdventurerMod.makeID(DefaultSecondMagicNumberSkill.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
 
     // /TEXT DECLARATION/
@@ -40,7 +40,7 @@ public class DefaultSecondMagicNumberSkill extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
 

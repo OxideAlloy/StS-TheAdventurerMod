@@ -5,11 +5,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theAdventurer.DefaultMod;
+import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.UncommonPowerAction;
-import theAdventurer.characters.TheDefault;
+import theAdventurer.characters.TheAdventurer;
 
-import static theAdventurer.DefaultMod.makeCardPath;
+import static theAdventurer.TheAdventurerMod.makeCardPath;
 
 public class DefaultUncommonPower extends AbstractDynamicCard {
 
@@ -21,7 +21,7 @@ public class DefaultUncommonPower extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = DefaultMod.makeID(DefaultUncommonPower.class.getSimpleName());
+    public static final String ID = TheAdventurerMod.makeID(DefaultUncommonPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -34,7 +34,7 @@ public class DefaultUncommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
     private static final int COST = -1;
     private static final int MAGIC = 1;

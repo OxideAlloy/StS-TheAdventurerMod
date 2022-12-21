@@ -20,14 +20,14 @@ import com.megacrit.cardcrawl.vfx.combat.DarkOrbPassiveEffect;
 import com.megacrit.cardcrawl.vfx.combat.OrbFlareEffect;
 
 import basemod.abstracts.CustomOrb;
-import theAdventurer.DefaultMod;
+import theAdventurer.TheAdventurerMod;
 
-import static theAdventurer.DefaultMod.makeOrbPath;
+import static theAdventurer.TheAdventurerMod.makeOrbPath;
 
 public class DefaultOrb extends CustomOrb {
 
     // Standard ID/Description
-    public static final String ORB_ID = DefaultMod.makeID("DefaultOrb");
+    public static final String ORB_ID = TheAdventurerMod.makeID("DefaultOrb");
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 

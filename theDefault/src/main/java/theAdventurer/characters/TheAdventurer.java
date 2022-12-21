@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import theAdventurer.DefaultMod;
+import theAdventurer.TheAdventurerMod;
 import theAdventurer.cards.*;
 import theAdventurer.relics.DefaultClickableRelic;
 import theAdventurer.relics.PlaceholderRelic;
@@ -29,15 +29,15 @@ import theAdventurer.relics.PlaceholderRelic2;
 
 import java.util.ArrayList;
 
-import static theAdventurer.DefaultMod.*;
-import static theAdventurer.characters.TheDefault.Enums.COLOR_GRAY;
+import static theAdventurer.TheAdventurerMod.*;
+import static theAdventurer.characters.TheAdventurer.Enums.COLOR_GRAY;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in DefaultMod-character-Strings.json in the resources
 
-public class TheDefault extends CustomPlayer {
-    public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
+public class TheAdventurer extends CustomPlayer {
+    public static final Logger logger = LogManager.getLogger(TheAdventurerMod.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
     // These are enums for your Characters color (both general color and for the card library) as well as
@@ -99,7 +99,7 @@ public class TheDefault extends CustomPlayer {
 
     // =============== CHARACTER CLASS START =================
 
-    public TheDefault(String name, PlayerClass setClass) {
+    public TheAdventurer(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "theAdventurerResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
@@ -221,7 +221,7 @@ public class TheDefault extends CustomPlayer {
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return theAdventurer.DefaultMod.DEFAULT_GRAY;
+        return TheAdventurerMod.DEFAULT_GRAY;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -252,20 +252,20 @@ public class TheDefault extends CustomPlayer {
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new TheDefault(name, chosenClass);
+        return new TheAdventurer(name, chosenClass);
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return theAdventurer.DefaultMod.DEFAULT_GRAY;
+        return TheAdventurerMod.DEFAULT_GRAY;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return theAdventurer.DefaultMod.DEFAULT_GRAY;
+        return TheAdventurerMod.DEFAULT_GRAY;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects
