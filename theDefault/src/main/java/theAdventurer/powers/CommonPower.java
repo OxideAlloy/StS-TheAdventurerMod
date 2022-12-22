@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.util.TextureLoader;
 
+
 import static theAdventurer.TheAdventurerMod.makePowerPath;
 
 //Gain 1 dex for the turn for each card played.
@@ -30,9 +31,8 @@ public class CommonPower extends AbstractPower implements CloneablePowerInterfac
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
-
+    private static final Texture tex84 = theAdventurer.util.TextureLoader.getTexture("theAdventurerResources/images/powers/placeholder_power84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theAdventurerResources/images/powers/placeholder_power32.png");
     public CommonPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
         ID = POWER_ID;

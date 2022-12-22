@@ -49,9 +49,9 @@ public class TheAdventurer extends CustomPlayer {
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_DEFAULT;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
+        @SpireEnum(name = "SKY_BLUE") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
+        @SpireEnum(name = "SKY_BLUE") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
 
@@ -64,8 +64,8 @@ public class TheAdventurer extends CustomPlayer {
     public static final int STARTING_HP = 75;
     public static final int MAX_HP = 75;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
-    public static final int ORB_SLOTS = 3;
+    public static final int CARD_DRAW = 5;
+    public static final int ORB_SLOTS = 0;
 
     // =============== /BASE STATS/ =================
 
@@ -157,22 +157,36 @@ public class TheAdventurer extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
 
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
 
-        retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
+        retVal.add(See_TA.ID);
+        retVal.add(BlueVial_TA.ID);
 
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
+//        retVal.add(DefaultCommonAttack.ID);
+//        retVal.add(DefaultUncommonAttack.ID);
+//        retVal.add(DefaultRareAttack.ID);
+//
+//        retVal.add(DefaultCommonSkill.ID);
+//        retVal.add(DefaultUncommonSkill.ID);
+//        retVal.add(DefaultRareSkill.ID);
+//
+//        retVal.add(DefaultCommonPower.ID);
+//        retVal.add(DefaultUncommonPower.ID);
+//        retVal.add(DefaultRarePower.ID);
+//
+//        retVal.add(DefaultAttackWithVariable.ID);
+//        retVal.add(DefaultSecondMagicNumberSkill.ID);
+//        retVal.add(OrbSkill.ID);
 
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
         return retVal;
     }
 

@@ -1,4 +1,11 @@
 {
+"theAdventurer:StoutPower_TA": {
+        "NAME": "Stout",
+        "DESCRIPTIONS": ["Deal +5 damage and gain +5 block as long as you are Stout. Reduce by 1 each turn."]
+},
+
+
+
 "theAdventurer:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
