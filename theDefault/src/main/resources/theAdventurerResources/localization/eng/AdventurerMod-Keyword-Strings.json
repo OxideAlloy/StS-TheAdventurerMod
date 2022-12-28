@@ -16,5 +16,37 @@
       "multikeyword"
     ],
     "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "PROPER_NAME": "Hatch",
+    "NAMES": [
+      "hatch",
+      "Hatch"
+    ],
+    "DESCRIPTION": "Discarding or playing this card reduces the hatch number, when discarded or played at 1, it transforms into a different card."
+  },
+  {
+    "PROPER_NAME": "Forage",
+    "NAMES": [
+      "forage",
+      "Forage"
+    ],
+    "DESCRIPTION": "If you aren't Satiated, draw X cards and gain Satiated."
+  },
+  {
+    "PROPER_NAME": "Polymorph",
+    "NAMES": [
+      "polymorph",
+      "Polymorph"
+    ],
+    "DESCRIPTION": "When played, discard the top card of your deck and place this card on top of your deck."
+  },
+  {
+    "PROPER_NAME": "Stout",
+    "NAMES": [
+      "stout",
+      "Stout"
+    ],
+    "DESCRIPTION": "Deal 5 extra damage and gain 5 extra block when you are Stout. Reduced by 1 each turn."
   }
 ]

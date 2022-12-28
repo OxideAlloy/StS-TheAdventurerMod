@@ -1,7 +1,11 @@
 {
 "theAdventurer:StoutPower_TA": {
         "NAME": "Stout",
-        "DESCRIPTIONS": ["Deal +5 damage and gain +5 block as long as you are Stout. Reduce by 1 each turn."]
+        "DESCRIPTIONS": ["Deal +5 damage and gain +5 block. Stout is reduced by 1 each turn."]
+},
+"theAdventurer:SatiatedPower_TA": {
+        "NAME": "Satiated",
+        "DESCRIPTIONS": ["Removed at the start of your turn."]
 },
 
 

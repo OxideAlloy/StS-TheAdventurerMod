@@ -13,7 +13,7 @@
   },
   "theAdventurer:BlueVial_TA": {
     "NAME": "Blue Vial",
-    "DESCRIPTION": "Potion. NL Obtain a Minor Blue Tonic. Exhaust."
+    "DESCRIPTION": "Potion. NL Obtain a Minor Blue Tonic. NL Exhaust."
   },
   "theAdventurer:StreetFight_TA": {
     "NAME": "Street Fight",
@@ -23,10 +23,31 @@
     "NAME": "Smash",
     "DESCRIPTION": "Polymorph. NL Deal !D! damage, NL gain !B! Block."
   },
+  "theAdventurer:WildMushroom_TA": {
+    "NAME": "Wild Mushroom",
+    "DESCRIPTION": "Forage !M! NL Satiated: Gain !theAdventurer:SecondMagic! Stout."
+  },
+  "theAdventurer:TurtleShield_TA": {
+    "NAME": "Turtle Shield",
+    "DESCRIPTION": "Gain !B! Block, !B! Block next turn, and !M! Plated Armor."
+  },
+  "theAdventurer:TurtleEgg_TA": {
+    "NAME": "Turtle Egg",
+    "DESCRIPTION": "Hatch !M!. NL Gain !B! Block and NL !B! Block next turn. "
+  },
   "theAdventurer:Bottle_TA": {
-    "NAME": "Empty Bottle",
+    "NAME": "Turtle Egg",
     "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL Exhaust."
   },
+  "theAdventurer:Slam_TA": {
+    "NAME": "Slam",
+    "DESCRIPTION": "Polymorph. NL Deal !D! damage. NL Exhaust a random card."
+  },
+  "theAdventurer:Pomabomb_TA": {
+    "NAME": "Pomabomb",
+    "DESCRIPTION": "Forage. Deal !D! damage to a random enemy, 3 times."
+  },
+
 
 
 

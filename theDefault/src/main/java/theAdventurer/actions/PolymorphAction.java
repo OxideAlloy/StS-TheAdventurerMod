@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.vfx.PetalEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 
 public class PolymorphAction extends AbstractGameAction {
@@ -19,9 +20,9 @@ public class PolymorphAction extends AbstractGameAction {
     }
 
     public void update() {
-        this.MillTop();
         for (AbstractGameAction action : AbstractDungeon.actionManager.actions) {
             if (action instanceof UseCardAction) {
+                this.MillTop();
                 ((UseCardAction) action).reboundCard = true;
                 break;
             }
@@ -31,10 +32,13 @@ public class PolymorphAction extends AbstractGameAction {
 
     //See Vacant for similar code
     private void MillTop() {
-        AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();
-        new ShowCardAndAddToDiscardEffect(card);
-        AbstractDungeon.player.drawPile.removeCard(card);
-        AbstractDungeon.player.discardPile.addToTop(card);
+        if (AbstractDungeon.player.drawPile.size() > 0) {
+            AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();
+            if(card != null) {
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(card));
+            }
+        }
+
     }
 
 }

@@ -1,5 +1,6 @@
 package theAdventurer.cards;
 
+import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
@@ -8,6 +9,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theAdventurer.TheAdventurerMod;
+import theAdventurer.actions.BottleAction;
+import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
 import theAdventurer.potions.MinorBlueTonic;
 import theAdventurer.util.CustomTags;
@@ -45,16 +48,22 @@ public class BlueVial_TA extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        //this.addToBot(new TalkAction(true, "@RRrroohrrRGHHhhh!!@", 1.5F, 1.5F));
+
+        //should probably pass this card as second argument and then check if it is upgraded in BottleAction
+        this.addToBot(new BottleAction(this));
+        //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
         this.addToBot(new ObtainPotionAction(new MinorBlueTonic()));
 
-        //this should be an action, should take into account if the card is upgraded so the bottle will be upgraded
-        this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
+        //this should be an action, should take into account if the card is upgraded so the bottle will be upgraded. Could include sound from bouncing flask?
+        //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            this.cardsToPreview.upgrade();
 //            upgradeBlock(UPGRADE_PLUS_BLOCK);
 //            upgradeBaseCost(UPGRADED_COST);
 //            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);

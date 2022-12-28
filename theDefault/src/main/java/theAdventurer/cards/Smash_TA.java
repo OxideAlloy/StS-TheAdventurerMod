@@ -6,10 +6,12 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
@@ -41,15 +43,13 @@ public class Smash_TA extends AbstractDynamicCard {
         baseBlock = BLOCK;
         //action.reboundCard = true;
         tags.add(CustomTags.POLYMORPH_CARD);
-
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new PolymorphAction());
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        //this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction());
     }
 
 
