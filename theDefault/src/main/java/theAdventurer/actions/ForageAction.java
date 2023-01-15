@@ -25,9 +25,6 @@ public class ForageAction extends AbstractGameAction {
     }
 
     public void update() {
-        ////////////////////////////////////////////////////////////////////////
-        //Need to add Satiated power, and check that prevents draw if Satiated//
-        ///////////////////////////////////////////////////////////////////////
         if (!this.target.hasPower("theAdventurer:SatiatedPower_TA")) {
             this.addToTop(new DrawCardAction(this.target, magicNumber));
             this.addToBot(new ApplyPowerAction(this.target, this.target, new SatiatedPower_TA(this.target, this.magicNumber), this.magicNumber));

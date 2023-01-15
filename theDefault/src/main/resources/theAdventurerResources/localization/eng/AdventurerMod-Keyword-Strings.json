@@ -48,5 +48,38 @@
       "Stout"
     ],
     "DESCRIPTION": "Deal 5 extra damage and gain 5 extra block when you are Stout. Reduced by 1 each turn."
+  },
+  {
+    "PROPER_NAME": "Potion",
+    "NAMES": [
+      "potion",
+      "Potion"
+    ],
+    "DESCRIPTION": "Shuffle a Bottle into your deck when played."
+  },
+  {
+    "PROPER_NAME": "Sauté",
+    "NAMES": [
+      "sauté",
+      "Sauté"
+    ],
+    "DESCRIPTION": "Causes damage at the end of turn. Can be blocked. Decays by half each turn rounded down."
+  },
+  {
+    "PROPER_NAME": "Gored",
+    "NAMES": [
+      "gored",
+      "Gored"
+    ],
+    "DESCRIPTION": "Gored Creatures take damage when you play a card."
+  },
+  {
+    "PROPER_NAME": "Constricted",
+    "NAMES": [
+      "constricted",
+      "Constrict",
+      "constrict"
+    ],
+    "DESCRIPTION": "Constricted enemies take damage at the end of their turn."
   }
 ]

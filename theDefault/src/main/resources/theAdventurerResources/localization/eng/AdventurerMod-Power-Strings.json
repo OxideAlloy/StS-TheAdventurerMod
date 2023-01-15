@@ -1,21 +1,35 @@
 {
-"theAdventurer:StoutPower_TA": {
-        "NAME": "Stout",
-        "DESCRIPTIONS": ["Deal +5 damage and gain +5 block. Stout is reduced by 1 each turn."]
-},
-"theAdventurer:SatiatedPower_TA": {
-        "NAME": "Satiated",
-        "DESCRIPTIONS": ["Removed at the start of your turn."]
-},
+        "theAdventurer:StoutPower_TA": {
+                "NAME": "Stout",
+                "DESCRIPTIONS": ["Deal +5 damage and gain +5 block. Stout is reduced by 1 each turn."]
+        },
+        "theAdventurer:SatiatedPower_TA": {
+                "NAME": "Satiated",
+                "DESCRIPTIONS": ["Removed at the start of your turn."]
+        },
+        "theAdventurer:SautéPower_TA": {
+                "NAME": "Sauté",
+                "DESCRIPTIONS": [
+                        "Take ",
+                        " damage at the end of your turn. Can be blocked. Decays by half each turn rounded down."
+                ]
+        },
+        "theAdventurer:GoredPower_TA": {
+                "NAME": "Gored",
+                "DESCRIPTIONS": [
+                        "This creatures takes ",
+                        " damage when you play a card."
+                ]
+        },
 
 
 
-"theAdventurer:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"theAdventurer:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+        "theAdventurer:CommonPower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+        },
+        "theAdventurer:RarePower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+        }
 }

@@ -158,23 +158,19 @@ public class TheAdventurer extends CustomPlayer {
 
         retVal.add(Strike_TA.ID);
         retVal.add(Strike_TA.ID);
-        //retVal.add(Strike_TA.ID);
-        //retVal.add(Strike_TA.ID);
-        //retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
+        retVal.add(Strike_TA.ID);
 
         retVal.add(Defend_TA.ID);
         retVal.add(Defend_TA.ID);
-        //retVal.add(Defend_TA.ID);
-        //retVal.add(Defend_TA.ID);
-        //retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
+        retVal.add(Defend_TA.ID);
 
         retVal.add(See_TA.ID);
         retVal.add(BlueVial_TA.ID);
 
-        retVal.add(TurtleEgg_TA.ID);
-        retVal.add(TurtleEgg_TA.ID);
-        retVal.add(TurtleEgg_TA.ID);
-        retVal.add(TurtleEgg_TA.ID);
 
 //        retVal.add(DefaultCommonAttack.ID);
 //        retVal.add(DefaultUncommonAttack.ID);

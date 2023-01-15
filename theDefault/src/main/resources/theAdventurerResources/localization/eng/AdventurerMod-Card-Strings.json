@@ -13,7 +13,7 @@
   },
   "theAdventurer:BlueVial_TA": {
     "NAME": "Blue Vial",
-    "DESCRIPTION": "Potion. NL Obtain a Minor Blue Tonic. NL Exhaust."
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Minor Blue Tonic. NL Exhaust."
   },
   "theAdventurer:StreetFight_TA": {
     "NAME": "Street Fight",
@@ -21,11 +21,11 @@
   },
   "theAdventurer:Smash_TA": {
     "NAME": "Smash",
-    "DESCRIPTION": "Polymorph. NL Deal !D! damage, NL gain !B! Block."
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage, NL gain !B! Block."
   },
   "theAdventurer:WildMushroom_TA": {
     "NAME": "Wild Mushroom",
-    "DESCRIPTION": "Forage !M! NL Satiated: Gain !theAdventurer:SecondMagic! Stout."
+    "DESCRIPTION": "theadventurer:Forage !M! NL Satiated: Gain !theAdventurer:SecondMagic! Stout."
   },
   "theAdventurer:TurtleShield_TA": {
     "NAME": "Turtle Shield",
@@ -33,22 +33,130 @@
   },
   "theAdventurer:TurtleEgg_TA": {
     "NAME": "Turtle Egg",
-    "DESCRIPTION": "Hatch !M!. NL Gain !B! Block and NL !B! Block next turn. "
+    "DESCRIPTION": "theadventurer:Hatch !M! NL Gain !B! Block and NL !B! Block next turn. "
   },
   "theAdventurer:Bottle_TA": {
-    "NAME": "Turtle Egg",
+    "NAME": "Bottle",
     "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL Exhaust."
   },
   "theAdventurer:Slam_TA": {
     "NAME": "Slam",
-    "DESCRIPTION": "Polymorph. NL Deal !D! damage. NL Exhaust a random card."
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage. NL Exhaust a random card."
   },
   "theAdventurer:Pomabomb_TA": {
     "NAME": "Pomabomb",
-    "DESCRIPTION": "Forage. Deal !D! damage to a random enemy, 3 times."
+    "DESCRIPTION": "theadventurer:Forage. NL Deal !D! damage to a random enemy, 3 times."
   },
-
-
+  "theAdventurer:Peck_TA": {
+    "NAME": "Peck",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage."
+  },
+  "theAdventurer:Maul_TA": {
+    "NAME": "Maul",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage, gain !B! block. NL Satiated: Gain [E] [E]."
+  },
+  "theAdventurer:SnakeLash_TA": {
+    "NAME": "Snake Lash",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage. NL Cost is randomized (0-3) when drawn."
+  },
+  "theAdventurer:KillingTime_TA": {
+    "NAME": "Killing Time",
+    "DESCRIPTION": "Deal !D! damage. NL End your turn."
+  },
+  "theAdventurer:FallingKick_TA": {
+    "NAME": "Falling Kick",
+    "DESCRIPTION": "Deal !D! damage. NL theadventurer:Satiated: Gain [E] and draw 1 card."
+  },
+  "theAdventurer:ExplodingFist_TA": {
+    "NAME": "Exploding Fist",
+    "DESCRIPTION": "Deal !D! damage twice. NL Take !M! damage."
+  },
+  "theAdventurer:DoubleSlash_TA": {
+    "NAME": "Double Slash",
+    "DESCRIPTION": "Deal !D! damage twice. NL Exhaust."
+  },
+  "theAdventurer:CoinToss_TA": {
+    "NAME": "Coin Toss",
+    "DESCRIPTION": "Pay 1 gold. NL Deal !D! damage. NL Draw a card."
+  },
+  "theAdventurer:Balance_TA": {
+    "NAME": "Balance",
+    "DESCRIPTION": "Deal !D! damage. NL If this is fully blocked, gain !M! theadventurer:Stout."
+  },
+  "theAdventurer:FireWhip_TA": {
+    "NAME": "Fire Whip",
+    "DESCRIPTION": "Deal !D! damage and apply !M! theadventurer:Sauté."
+  },
+  "theAdventurer:FireScroll_TA": {
+    "NAME": "Fire Scroll",
+    "DESCRIPTION": "Apply !M! Mark. NL ALL enemies gain theadventurer:Sauté equal to their Mark. NL Exhaust."
+  },
+  "theAdventurer:ChainSpell_TA": {
+    "NAME": "Chain Spell",
+    "DESCRIPTION": "Apply !M! Mark. NL ALL enemies gain Weak equal to their Mark."
+  },
+  "theAdventurer:MolotovCocktail_TA": {
+    "NAME": "Molotov Cocktail",
+    "DESCRIPTION": "Discard all Bottle cards in your hand and apply !M! theadventurer:Sauté for each card discarded."
+  },
+  "theAdventurer:FanTheFlames_TA": {
+    "NAME": "Fan The Flames",
+    "DESCRIPTION": "Double all enemies theadventurer:Sauté. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple all enemies theadventurer:Sauté. NL Exhaust."
+  },
+  "theAdventurer:SkyBerries_TA": {
+    "NAME": "Sky Berries",
+    "DESCRIPTION": "theadventurer:Forage !M!."
+  },
+  "theAdventurer:SilverShiv_TA": {
+    "NAME": "Silver Shiv",
+    "DESCRIPTION": "Deal !D! damage. NL Discard the top card of your deck."
+  },
+  "theAdventurer:PaintThemRed_TA": {
+    "NAME": "Paint Them Red",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! theadventurer:Gored."
+  },
+  "theAdventurer:Maim_TA": {
+    "NAME": "Maim",
+    "DESCRIPTION": "Deal !D! damage damage X times. Apply X theadventurer:Gored and Weak.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage damage X+1 times. Apply X+1 theadventurer:Gored and Weak."
+  },
+  "theAdventurer:Gore_TA": {
+    "NAME": "Gore",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage twice. NL Apply !M! Gored."
+  },
+  "theAdventurer:GoldenGoose_TA": {
+    "NAME": "Golden Goose",
+    "DESCRIPTION": "Deals !D! damage. NL (1 damage for each each 5 gold you have.)"
+  },
+  "theAdventurer:DragonFire_TA": {
+    "NAME": "Dragon Fire",
+    "DESCRIPTION": "Apply !M! theadventurer:Sauté to all enemies."
+  },
+  "theAdventurer:StrangeChicken_TA": {
+    "NAME": "Strange Chicken",
+    "DESCRIPTION": "Deal !D! damage. NL Discard all eggs and draw that many cards."
+  },
+  "theAdventurer:Muffle_TA": {
+    "NAME": "Muffle",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to apply a debuff, gain !M! artifact."
+  },
+  "theAdventurer:CrystalShiv_TA": {
+    "NAME": "Crystal Shiv",
+    "DESCRIPTION": "Deal !D! damage. NL Ethereal."
+  },
+  "theAdventurer:ClockworkBlade_TA": {
+    "NAME": "Clockwork Blade",
+    "DESCRIPTION": "Deals !D! damage. NL (1 damage for each each floor you have climbed.)"
+  },
+  "theAdventurer:Bite_TA": {
+    "NAME": "Bite",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Apply !M! Mark. Deal !D! to each Marked enemy."
+  },
+  "theAdventurer:FromTheDepths_TA": {
+    "NAME": "From The Depths",
+    "DESCRIPTION": "Apply !M! Frail. NL Apply !theAdventurer:SecondMagic! theadventurer:Constricted."
+  },
 
 
 
