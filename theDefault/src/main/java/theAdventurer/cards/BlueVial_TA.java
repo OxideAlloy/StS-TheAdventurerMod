@@ -12,6 +12,7 @@ import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.BottleAction;
 import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.potions.BlueTonic;
 import theAdventurer.potions.MinorBlueTonic;
 import theAdventurer.util.CustomTags;
 
@@ -53,8 +54,12 @@ public class BlueVial_TA extends AbstractDynamicCard {
         //should probably pass this card as second argument and then check if it is upgraded in BottleAction
         this.addToBot(new BottleAction(this));
         //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
-        this.addToBot(new ObtainPotionAction(new MinorBlueTonic()));
 
+        if(this.upgraded){
+            this.addToBot(new ObtainPotionAction(new BlueTonic()));
+        } else {
+            this.addToBot(new ObtainPotionAction(new MinorBlueTonic()));
+        }
         //this should be an action, should take into account if the card is upgraded so the bottle will be upgraded. Could include sound from bouncing flask?
         //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
     }

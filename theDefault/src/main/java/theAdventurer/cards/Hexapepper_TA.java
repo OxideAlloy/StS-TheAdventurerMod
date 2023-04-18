@@ -1,43 +1,46 @@
 package theAdventurer.cards;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ConstrictedPower;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import theAdventurer.TheAdventurerMod;
+import theAdventurer.actions.ForageAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.powers.SautéPower_TA;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
-public class FromTheDepths_TA extends AbstractDynamicCard {
+public class Hexapepper_TA extends AbstractDynamicCard {
 
-    public static final String ID = TheAdventurerMod.makeID(FromTheDepths_TA.class.getSimpleName());
-    public static final String IMG = makeCardPath("FromTheDepths_TA.png");
+    public static final String ID = TheAdventurerMod.makeID(Hexapepper_TA.class.getSimpleName());
+    public static final String IMG = makeCardPath("FirePepper_TA.png");
 
-    private static final CardRarity RARITY = CardRarity.SPECIAL;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
-    private static final int COST = 3;
-    private static final int UPGRADED_COST = 2;
-    private static final int MAGIC = 99;
-    private static final int MAGICTWO = 20;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
 
-    public FromTheDepths_TA() {
+    private static final int MAGIC = 8;
+
+    public Hexapepper_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = MAGICTWO;
+        this.cardsToPreview = new Burn();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m, p, new FrailPower(m, this.magicNumber, false), this.magicNumber));
-        this.addToBot(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, this.defaultSecondMagicNumber), this.defaultSecondMagicNumber));
+        this.addToBot(new ApplyPowerAction(m, p, new SautéPower_TA(m, p, this.magicNumber), this.magicNumber, AbstractGameAction.AttackEffect.FIRE));
+        this.addToBot(new MakeTempCardInDiscardAction(new Burn(), 1));
+        this.addToBot(new ForageAction(1));
     }
 
     @Override

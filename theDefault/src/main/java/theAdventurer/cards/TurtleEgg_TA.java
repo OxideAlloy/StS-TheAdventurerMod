@@ -169,6 +169,7 @@ public class TurtleEgg_TA extends AbstractDynamicCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
+            this.cardsToPreview.upgrade();
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
 //            upgradeBaseCost(UPGRADED_COST);

@@ -34,6 +34,14 @@
     "DESCRIPTION": "If you aren't Satiated, draw X cards and gain Satiated."
   },
   {
+    "PROPER_NAME": "Satiated",
+    "NAMES": [
+      "satiated",
+      "Satiated"
+    ],
+    "DESCRIPTION": "You do not draw cards from Foraging while Satiated."
+  },
+  {
     "PROPER_NAME": "Polymorph",
     "NAMES": [
       "polymorph",

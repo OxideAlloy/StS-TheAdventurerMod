@@ -157,6 +157,127 @@
     "NAME": "From The Depths",
     "DESCRIPTION": "Apply !M! Frail. NL Apply !theAdventurer:SecondMagic! theadventurer:Constricted."
   },
+  "theAdventurer:DragonEgg_TA": {
+    "NAME": "Dragon Egg",
+    "DESCRIPTION": "Apply !theAdventurer:SecondMagic! theadventurer:Sauté. NL theadventurer:Hatch !M!."
+  },
+  "theAdventurer:FireBird_TA": {
+    "NAME": "Fird Bird",
+    "DESCRIPTION": "Apply !M! theadventurer:Sauté. NL Draw a card."
+  },
+  "theAdventurer:MoltenEgg_TA": {
+    "NAME": "Molten Egg",
+    "DESCRIPTION": "Apply !theAdventurer:SecondMagic! theadventurer:Sauté. NL theadventurer:Hatch !M!."
+  },
+  "theAdventurer:ClockworkEgg_TA": {
+    "NAME": "Clockwork Egg",
+    "DESCRIPTION": "Draw 2 cards next turn. NL theadventurer:Hatch !M!."
+  },
+  "theAdventurer:Hexapepper_TA": {
+    "NAME": "Hexapepper",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Apply !M! theadventurer:Sauté. Shuffle a *Burn into your deck."
+  },
+  "theAdventurer:CrystalFruit_TA": {
+    "NAME": "Crystal Fruit",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Gain 2 temporary Strength. Add a *Crystal *Shiv to your hand.",
+    "UPGRADE_DESCRIPTION": "theadventurer:Forage 1. NL Gain !M! temporary Strength. Add a *Crystal *Shiv+ to your hand."
+  },
+  "theAdventurer:WardingMushroom_TA": {
+    "NAME": "Warding Mushroom",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Gain !M! Artifact. NL Exhaust"
+  },
+  "theAdventurer:Egg_TA": {
+    "NAME": "Egg",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Gain 1 energy next turn. theadventurer:Hatch !M!."
+  },
+  "theAdventurer:Bannnango_TA": {
+    "NAME": "Bannnango",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Heal !M! HP. NL Exhaust."
+  },
+  "theAdventurer:DurganFruit_TA": {
+    "NAME": "Durgan Fruit",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Gain !M! Thorns. NL Exhaust."
+  },
+  "theAdventurer:BlackBile_TA": {
+    "NAME": "Black Bile",
+    "DESCRIPTION": "If you are theadventurer:Satiated lose Satiated and Exhaust."
+  },
+  "theAdventurer:ToxicMushroom_TA": {
+    "NAME": "Toxic Mushroom",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Lose theadventurer:Satiated NL Draw !M! cards. Shuffle a *Black *Bile into your draw pile."
+  },
+  "theAdventurer:DarkRitual_TA": {
+    "NAME": "Dark Ritual",
+    "DESCRIPTION": "If you are theadventurer:Satiated gain 1 Ritual, otherwise gain 1 Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If you are theadventurer:Satiated gain 1 Ritual and Exhaust, otherwise gain 1 Strength."
+  },
+  "theAdventurer:MagicMushroom_TA": {
+    "NAME": "Magic Mushroom",
+    "DESCRIPTION": "theadventurer:Forage 1. NL Put a Potion card from your Exhaust pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "theadventurer:Forage 1. NL Put a Potion card from your Exhaust pile into your hand."
+  },
+  "theAdventurer:GuardianEnt_TA": {
+    "NAME": "Guardian Ent",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block."
+  },
+  "theAdventurer:PineShield_TA": {
+    "NAME": "Pine Shield",
+    "DESCRIPTION": "Gain !B! Block. NL Hatch !M!"
+  },
+  "theAdventurer:PineEgg_TA": {
+    "NAME": "Pine Egg",
+    "DESCRIPTION": "Gain !B! Block. NL Hatch !M!"
+  },
+  "theAdventurer:HideInATree_TA": {
+    "NAME": "Hide In A Tree",
+    "DESCRIPTION": "Gain !B! Block. NL If theadventurer:Satiated gain 1 Blur."
+  },
+  "theAdventurer:BurningWings_TA": {
+    "NAME": "Burning Wings",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! theadventurer:Sauté."
+  },
+  "theAdventurer:CrystalShield_TA": {
+    "NAME": "Crystal Shield",
+    "DESCRIPTION": "Gain !B! block. NL Shuffle a *Crystal *Shiv into your deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. NL Shuffle !M! *Crystal *Shivs into your deck. NL Exhaust."
+  },
+  "theAdventurer:Candle_TA": {
+    "NAME": "Candle",
+    "DESCRIPTION": "Gain !M! theadventurer:Sauté. NL Gain [E] [E] and draw a card."
+  },
+  "theAdventurer:GoldenEgg_TA": {
+    "NAME": "Golden Egg",
+    "DESCRIPTION": "Gain !theAdventurer:SecondMagic! Gold. Hatch !M!."
+  },
+  "theAdventurer:EntEgg_TA": {
+    "NAME": "Ent Egg",
+    "DESCRIPTION": "Gain !B! Block. Hatch !M!."
+  },
+  "theAdventurer:GrimProphecy_TA": {
+    "NAME": "Grim Prophecy",
+    "DESCRIPTION": "When drawn, Scry 13 and lose 1 energy.",
+    "UPGRADE_DESCRIPTION": "When drawn, Scry 13."
+  },
+  "theAdventurer:Root_TA": {
+    "NAME": "Root",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Gain !B! block, [E] [E] and Entangled."
+  },
+  "theAdventurer:Swipe_TA": {
+    "NAME": "Swipe",
+    "DESCRIPTION": "theadventurer:Polymorph. NL Steal up to !M! block from target enemy."
+  },
+  "theAdventurer:DeepEgg_TA": {
+    "NAME": "Deep Egg",
+    "DESCRIPTION": "Scry !theAdventurer:SecondMagic!. NL Hatch !M!."
+  },
+  "theAdventurer:Parasite_TA": {
+    "NAME": "Parasite",
+    "DESCRIPTION": "Unplayable. NL When drawn, Forage !M!."
+  },
+  "theAdventurer:LavaWall_TA": {
+    "NAME": "Lava Wall",
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, apply !M! Sauté to the attacker."
+  },
 
 
 

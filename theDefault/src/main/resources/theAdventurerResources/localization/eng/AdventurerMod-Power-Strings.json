@@ -21,6 +21,15 @@
                         " damage when you play a card."
                 ]
         },
+        "theAdventurer:LavaWallPower_TA": {
+                "NAME": "Lava Barrier",
+                "DESCRIPTIONS": [
+                        "Whenever you are attacked, apply ",
+                        " Sauté to the attacker."
+                ]
+        },
+
+
 
 
 

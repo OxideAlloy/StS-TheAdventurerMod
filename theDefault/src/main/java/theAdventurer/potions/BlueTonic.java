@@ -13,7 +13,7 @@ import basemod.abstracts.CustomPotion;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.powers.StoutPower_TA;
 
-public class MinorBlueTonic extends CustomPotion {
+public class BlueTonic extends CustomPotion {
 
     public static final String POTION_ID = TheAdventurerMod.makeID("MinorBlueTonic");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -21,22 +21,12 @@ public class MinorBlueTonic extends CustomPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public MinorBlueTonic() {
-        // The bottle shape and inside is determined by potion size and color. The actual colors are the main DefaultMod.java
-        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.SPHERE , PotionColor.BLUE);
-
-        // Potency is the damage/magic number equivalent of potions.
+    public BlueTonic() {
+        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.T, PotionColor.BLUE);
         potency = getPotency();
-
-        // Initialize the Description
         description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
-
-        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
-
-        // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
-
     }
 
     @Override
@@ -55,7 +45,7 @@ public class MinorBlueTonic extends CustomPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 1;
+        return 2;
     }
 
     public void upgradePotion()

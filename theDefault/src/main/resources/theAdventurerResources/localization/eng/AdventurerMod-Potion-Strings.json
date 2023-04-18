@@ -1,8 +1,14 @@
 {
 "theAdventurer:MinorBlueTonic": {
-        "NAME": "Placeholder Potion",
+        "NAME": "Minor Blue Tonic",
         "DESCRIPTIONS": ["Gain ", " Stout."]
 },
+"theAdventurer:BlueTonic": {
+        "NAME": "Blue Tonic",
+        "DESCRIPTIONS": ["Gain ", " Stout."]
+},
+
+
 
 
 
