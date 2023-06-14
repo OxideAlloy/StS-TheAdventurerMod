@@ -1,19 +1,13 @@
 package theAdventurer.cards;
 
-import com.megacrit.cardcrawl.actions.animations.TalkAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
-import com.megacrit.cardcrawl.cards.tempCards.Smite;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.BottleAction;
-import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
-import theAdventurer.potions.BlueTonic;
-import theAdventurer.potions.MinorBlueTonic;
+import theAdventurer.potions.BlueTonic_P_TA;
+import theAdventurer.potions.MinorBlueTonic_P_TA;
 import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
@@ -56,9 +50,9 @@ public class BlueVial_TA extends AbstractDynamicCard {
         //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
 
         if(this.upgraded){
-            this.addToBot(new ObtainPotionAction(new BlueTonic()));
+            this.addToBot(new ObtainPotionAction(new BlueTonic_P_TA()));
         } else {
-            this.addToBot(new ObtainPotionAction(new MinorBlueTonic()));
+            this.addToBot(new ObtainPotionAction(new MinorBlueTonic_P_TA()));
         }
         //this should be an action, should take into account if the card is upgraded so the bottle will be upgraded. Could include sound from bouncing flask?
         //this.addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview, 1, true, true, false));
@@ -68,11 +62,7 @@ public class BlueVial_TA extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.cardsToPreview.upgrade();
-//            upgradeBlock(UPGRADE_PLUS_BLOCK);
-//            upgradeBaseCost(UPGRADED_COST);
-//            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC);
-//            this.upgradeDefaultSecondMagicNumber(UPGRADE_PLUS_MAGICTWO);
+            //this.cardsToPreview.upgrade();
             initializeDescription();
         }
     }

@@ -12,6 +12,9 @@ import theAdventurer.characters.TheAdventurer;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class CrystalShiv_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(CrystalShiv_TA.class.getSimpleName());

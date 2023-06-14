@@ -12,6 +12,7 @@ import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.ForageAction;
 import theAdventurer.characters.TheAdventurer;
 import theAdventurer.powers.SautéPower_TA;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -34,6 +35,7 @@ public class Hexapepper_TA extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         this.cardsToPreview = new Burn();
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

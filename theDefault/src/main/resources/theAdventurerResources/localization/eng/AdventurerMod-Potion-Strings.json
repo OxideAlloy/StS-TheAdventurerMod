@@ -1,11 +1,35 @@
 {
-"theAdventurer:MinorBlueTonic": {
+"theAdventurer:MinorBlueTonic_P_TA": {
         "NAME": "Minor Blue Tonic",
         "DESCRIPTIONS": ["Gain ", " Stout."]
 },
-"theAdventurer:BlueTonic": {
+"theAdventurer:BlueTonic_P_TA": {
         "NAME": "Blue Tonic",
         "DESCRIPTIONS": ["Gain ", " Stout."]
+},
+"theAdventurer:RegrowthPotion_P_TA": {
+        "NAME": "Regrowth Potion",
+        "DESCRIPTIONS": ["Shuffle your discard pile into your deck and draw ", " cards."]
+},
+"theAdventurer:CrystalPotion_P_TA": {
+        "NAME": "Crystal Potion",
+        "DESCRIPTIONS": ["Until the start of your next turn, when an enemy damages you, they take that much damage."]
+},
+"theAdventurer:DeathPotion_P_TA": {
+        "NAME": "Death Potion",
+        "DESCRIPTIONS": ["Target enemy loses ", "% of their current HP."]
+},
+"theAdventurer:MinorLavaPotion_P_TA": {
+        "NAME": "Minor Lava Potion",
+        "DESCRIPTIONS": ["Apply ", " Sauté to target enemy."]
+},
+"theAdventurer:LavaPotion_P_TA": {
+        "NAME": "Lava Potion",
+        "DESCRIPTIONS": ["Apply ", " Sauté to target enemy."]
+},
+"theAdventurer:SeerPotion_P_TA": {
+        "NAME": "Seer Potion",
+        "DESCRIPTIONS": ["Scry ", "."]
 },
 
 
@@ -13,9 +37,7 @@
 
 
 
-
-
-"theAdventurer:PlaceholderPotion": {
+        "theAdventurer:PlaceholderPotion": {
         "NAME": "Placeholder Potion",
         "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " Strength."]
 }

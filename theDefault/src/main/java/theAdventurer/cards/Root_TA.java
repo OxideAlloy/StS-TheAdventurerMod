@@ -40,7 +40,7 @@ public class Root_TA extends AbstractDynamicCard {
         this.addToBot(new GainBlockAction(p, p, block));
         this.addToBot(new GainEnergyAction(2));
         this.addToBot(new ApplyPowerAction(p, p, new EntanglePower(p)));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

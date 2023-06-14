@@ -36,6 +36,7 @@ public class Egg_TA extends AbstractDynamicCard {
         magicNumber = baseMagicNumber = MAGIC;
         tags.add(CustomTags.EGG_CARD);
         this.cardsToPreview = new StrangeChicken_TA();
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

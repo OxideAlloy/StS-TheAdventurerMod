@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.ForageAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -30,6 +31,7 @@ public class Bannnango_TA extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
         this.exhaust = true;
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

@@ -11,6 +11,7 @@ import theAdventurer.actions.ForageAction;
 import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
 import theAdventurer.powers.StoutPower_TA;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -37,6 +38,7 @@ public class WildMushroom_TA extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = magicNumber = MAGIC;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = MAGICTWO;
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

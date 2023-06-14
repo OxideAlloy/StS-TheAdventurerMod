@@ -27,10 +27,10 @@ public class FireWhip_TA extends AbstractDynamicCard {
 
     private static final int COST = 1;
 
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 6;
 
     private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = 2;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
 
     public FireWhip_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

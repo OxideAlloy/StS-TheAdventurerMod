@@ -49,7 +49,7 @@ public class Maul_TA extends AbstractDynamicCard {
         if (p.hasPower("theAdventurer:SatiatedPower_TA")) {
             this.addToTop(new GainEnergyAction(this.magicNumber));
         }
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

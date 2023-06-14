@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.ForageAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -16,7 +17,7 @@ public class Parasite_TA extends AbstractDynamicCard {
     public static final String IMG = makeCardPath("Parasite_TA.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
@@ -29,6 +30,7 @@ public class Parasite_TA extends AbstractDynamicCard {
     public Parasite_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        //tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override
@@ -38,7 +40,10 @@ public class Parasite_TA extends AbstractDynamicCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+    }
 
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return false;
     }
 
     @Override

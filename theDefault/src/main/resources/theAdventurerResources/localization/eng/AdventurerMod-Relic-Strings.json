@@ -1,4 +1,13 @@
 {
+  "theAdventurer:WineSkinRelic_TA": {
+    "NAME": "Wineskin",
+    "FLAVOR": "Drink and be merry.",
+    "DESCRIPTIONS": [
+      "Gain 1 additional potion slot."
+    ]
+  },
+
+
   "theAdventurer:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",

@@ -28,8 +28,8 @@ public class MoltenEgg_TA extends AbstractDynamicCard {
 
     private static final int MAGIC = 2;
 
-    private static final int MAGICTWO = 3;
-    private static final int UPGRADE_PLUS_MAGICTWO = 2;
+    private static final int MAGICTWO = 5;
+    private static final int UPGRADE_PLUS_MAGICTWO = 3;
 
     private boolean discardCheck = false;
 

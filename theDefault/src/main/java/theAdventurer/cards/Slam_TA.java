@@ -40,7 +40,7 @@ public class Slam_TA extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new ExhaustAction(1, true, false, false));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

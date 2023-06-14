@@ -25,7 +25,7 @@
   },
   "theAdventurer:WildMushroom_TA": {
     "NAME": "Wild Mushroom",
-    "DESCRIPTION": "theadventurer:Forage !M! NL Satiated: Gain !theAdventurer:SecondMagic! Stout."
+    "DESCRIPTION": "theadventurer:Forage !M! NL theadventurer:Satiated: Gain !theAdventurer:SecondMagic! Stout."
   },
   "theAdventurer:TurtleShield_TA": {
     "NAME": "Turtle Shield",
@@ -53,7 +53,7 @@
   },
   "theAdventurer:Maul_TA": {
     "NAME": "Maul",
-    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage, gain !B! block. NL Satiated: Gain [E] [E]."
+    "DESCRIPTION": "theadventurer:Polymorph. NL Deal !D! damage, gain !B! block. NL theadventurer:Satiated: Gain [E] [E]."
   },
   "theAdventurer:SnakeLash_TA": {
     "NAME": "Snake Lash",
@@ -200,7 +200,7 @@
   },
   "theAdventurer:BlackBile_TA": {
     "NAME": "Black Bile",
-    "DESCRIPTION": "If you are theadventurer:Satiated lose Satiated and Exhaust."
+    "DESCRIPTION": "If you are theadventurer:Satiated lose theadventurer:Satiated and Exhaust."
   },
   "theAdventurer:ToxicMushroom_TA": {
     "NAME": "Toxic Mushroom",
@@ -251,7 +251,7 @@
   },
   "theAdventurer:EntEgg_TA": {
     "NAME": "Ent Egg",
-    "DESCRIPTION": "Gain !B! Block. Hatch !M!."
+    "DESCRIPTION": "Gain !B! Block. NL Hatch !M!."
   },
   "theAdventurer:GrimProphecy_TA": {
     "NAME": "Grim Prophecy",
@@ -272,12 +272,95 @@
   },
   "theAdventurer:Parasite_TA": {
     "NAME": "Parasite",
-    "DESCRIPTION": "Unplayable. NL When drawn, Forage !M!."
+    "DESCRIPTION": "Unplayable. NL When drawn, NL theadventurer:Forage !M!."
   },
   "theAdventurer:LavaWall_TA": {
     "NAME": "Lava Wall",
-    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, apply !M! Sauté to the attacker."
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, apply !M! theadventurer:Sauté to the attacker."
   },
+  "theAdventurer:NirvanaPotion_TA": {
+    "NAME": "Nirvana Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain an Entropic Brew. NL Exhaust."
+  },
+  "theAdventurer:OrangePotion_TA": {
+    "NAME": "Orange Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Blessing of the Forge. NL Exhaust."
+  },
+  "theAdventurer:PurplePotion_TA": {
+    "NAME": "Purple Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Distilled Chaos. NL Exhaust."
+  },
+  "theAdventurer:RedPotion_TA": {
+    "NAME": "Red Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain an Attack Potion. NL Exhaust."
+  },
+  "theAdventurer:MudPotion_TA": {
+    "NAME": "Muddy Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Regrowth Potion. NL Exhaust."
+  },
+  "theAdventurer:CrystalPotion_TA": {
+    "NAME": "Blue Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Crystal Potion. NL Exhaust."
+  },
+  "theAdventurer:DeathPotion_TA": {
+    "NAME": "Yellow Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Death Potion. NL Exhaust."
+  },
+  "theAdventurer:LavaPotion_TA": {
+    "NAME": "Lava Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Lava Potion. NL Exhaust."
+  },
+  "theAdventurer:SeerPotion_TA": {
+    "NAME": "Seer Potion",
+    "DESCRIPTION": "theadventurer:Potion. NL Obtain a Seer Potion. NL Exhaust."
+  },
+  "theAdventurer:Apothecary_TA": {
+    "NAME": "Apothecary",
+    "DESCRIPTION": "Bottle cards deal !M! more damage."
+  },
+  "theAdventurer:MaskofFaces_TA": {
+    "NAME": "Mask of Faces",
+    "DESCRIPTION": "Polymorph cards cost !M! less to play the turn they are drawn."
+  },
+  "theAdventurer:MaskofRenewal_TA": {
+    "NAME": "Mask of Renewal",
+    "DESCRIPTION": "At the start of your turn, draw !M! additional cards."
+  },
+  "theAdventurer:WoodenMask_TA": {
+    "NAME": "Mask of Renewal",
+    "DESCRIPTION": "theadventurer:Satiated no longer prevents you from using theadventurer:Forage."
+  },
+  "theAdventurer:MaskofRage_TA": {
+    "NAME": "Mask of Rage",
+    "DESCRIPTION": "At the end of your turn each enemy gains !M! theadventurer:Sauté."
+  },
+  "theAdventurer:KintsugiMask_TA": {
+    "NAME": "Kintsugi Mask",
+    "DESCRIPTION": "Whenever you lose hp, gain !M! energy next turn."
+  },
+  "theAdventurer:FeatherMask_TA": {
+    "NAME": "FeatherMask_TA",
+    "DESCRIPTION": "Whenever you play an egg. Reduce it's hatch value by !M!.",
+    "UPGRADE_DESCRIPTION": "Innate NL Whenever you play an egg. Reduce it's hatch value by !M!."
+  },
+  "theAdventurer:FreshAdventure_TA": {
+    "NAME": "Fresh Adventure",
+    "DESCRIPTION": "Gain !M Stout.",
+    "UPGRADE_DESCRIPTION": "Innate NL Gain !M Stout."
+  },
+  "theAdventurer:SpellBook_TA": {
+    "NAME": "Spell Book",
+    "DESCRIPTION": "At the start of your turn apply !M! mark to a random enemy and then deal damage to each enemy equal to their mark."
+  },
+  "theAdventurer:FoodFight_TA": {
+    "NAME": "Food Fight",
+    "DESCRIPTION": "Whenever you gain theadventurer:Satiated, gain !M! Block."
+  },
+  "theAdventurer:Indigestion_TA": {
+    "NAME": "Indigestion",
+    "DESCRIPTION": "Whenever you play a theadventurer:Forage card or use a Potion card. Each enemy gains !M! theadventurer:Sauté."
+  },
+
 
 
 

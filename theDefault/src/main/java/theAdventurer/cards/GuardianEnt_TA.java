@@ -1,5 +1,6 @@
 package theAdventurer.cards;
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,6 +13,9 @@ import theAdventurer.characters.TheAdventurer;
 import theAdventurer.powers.CommonPower;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
+
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
 
 public class GuardianEnt_TA extends AbstractDynamicCard {
 

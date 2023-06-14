@@ -27,7 +27,7 @@ public class BurningWings_TA extends AbstractDynamicCard {
     private static final int BLOCK = 18;
     private static final int UPGRADE_PLUS_BLOCK = 7;
 
-    private static final int MAGIC = 6;
+    private static final int MAGIC = 5;
 
     public BurningWings_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -30,6 +31,7 @@ public class Swipe_TA extends AbstractDynamicCard {
     public Swipe_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        tags.add(CustomTags.POLYMORPH_CARD);
     }
 
     @Override
@@ -46,7 +48,7 @@ public class Swipe_TA extends AbstractDynamicCard {
             m.currentBlock = 0;
         }
 
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
         //this.addToBot(new GainBlockAction(p, p, block));
     }
 

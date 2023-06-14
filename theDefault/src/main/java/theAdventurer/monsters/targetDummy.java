@@ -19,7 +19,7 @@ import java.util.Iterator;
 
 
 public class targetDummy extends AbstractMonster {
-    public static final String ID = "Shoggoth_A";
+    public static final String ID = "Target_Dummy";
     private static final MonsterStrings monsterStrings;
     public static final String NAME;
     public static final String[] MOVES;
@@ -49,8 +49,8 @@ public class targetDummy extends AbstractMonster {
         //array 1
         this.damage.add(new DamageInfo(this, CLAWS_DAMAGE));
 
-        this.loadAnimation("theStarKnightResources/images/monsters/targetDummy/skeleton.atlas", "theStarKnightResources/images/monsters/ShoggothA/skeleton.json", 1.0F);
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
+        this.loadAnimation("theAdventurerResources/images/monsters/targetDummy/skeleton.atlas", "theAdventurerResources/images/monsters/targetDummy/skeleton.json", 1.0F);
+        AnimationState.TrackEntry e = this.state.setAnimation(0, "animation0", true);
         e.setTime(e.getEndTime() * MathUtils.random());
         //this.state.addListener(new SlimeAnimListener());
     }
@@ -73,6 +73,14 @@ public class targetDummy extends AbstractMonster {
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, (DamageInfo)this.damage.get(0), AbstractGameAction.AttackEffect.SLASH_VERTICAL));;
                 //Show intent for next move
                 this.setMove((byte)1, Intent.ATTACK_DEBUFF, ((DamageInfo)this.damage.get(0)).base);
+        }
+    }
+
+    public void damage(DamageInfo info) {
+        super.damage(info);
+        if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.output > 0) {
+            this.state.setAnimation(0, "animation1", false);
+            this.state.addAnimation(0, "animation0", true, 0.0F);
         }
     }
 

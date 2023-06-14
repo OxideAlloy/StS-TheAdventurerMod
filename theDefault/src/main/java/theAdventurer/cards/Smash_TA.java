@@ -19,6 +19,9 @@ import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class Smash_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(Smash_TA.class.getSimpleName());
@@ -49,7 +52,7 @@ public class Smash_TA extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
 

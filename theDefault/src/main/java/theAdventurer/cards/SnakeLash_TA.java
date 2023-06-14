@@ -40,7 +40,7 @@ public class SnakeLash_TA extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

@@ -1,5 +1,6 @@
 package theAdventurer.cards;
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,6 +11,9 @@ import theAdventurer.characters.TheAdventurer;
 import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
+
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
 
 public class PineShield_TA extends AbstractDynamicCard {
 

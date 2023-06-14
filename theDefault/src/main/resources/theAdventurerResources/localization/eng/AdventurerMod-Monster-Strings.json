@@ -1,0 +1,11 @@
+{
+  "theStarKnight:targetDummy": {
+    "MOVES": [
+      "move"
+    ],
+    "NAME": "targetDummy",
+    "DIALOG": [
+      ""
+    ]
+  }
+}

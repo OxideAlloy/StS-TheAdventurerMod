@@ -1,5 +1,6 @@
 package theAdventurer.cards;
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,8 +14,12 @@ import com.megacrit.cardcrawl.vfx.combat.PotionBounceEffect;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.PolymorphAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
+
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
 
 public class Bottle_TA extends AbstractDynamicCard {
 
@@ -35,6 +40,7 @@ public class Bottle_TA extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         this.exhaust = true;
+        tags.add(CustomTags.BOTTLE_CARD);
     }
 
     @Override

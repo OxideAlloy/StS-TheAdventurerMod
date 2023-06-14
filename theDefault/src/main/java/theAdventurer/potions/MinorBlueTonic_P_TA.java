@@ -13,20 +13,21 @@ import basemod.abstracts.CustomPotion;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.powers.StoutPower_TA;
 
-public class BlueTonic extends CustomPotion {
+public class MinorBlueTonic_P_TA extends CustomPotion {
 
-    public static final String POTION_ID = TheAdventurerMod.makeID("MinorBlueTonic");
+    public static final String POTION_ID = TheAdventurerMod.makeID("MinorBlueTonic_P_TA");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
 
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public BlueTonic() {
-        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.T, PotionColor.BLUE);
+    public MinorBlueTonic_P_TA() {
+        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.S, PotionColor.BLUE);
         potency = getPotency();
         description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
         isThrown = false;
         tips.add(new PowerTip(name, description));
+
     }
 
     @Override
@@ -39,13 +40,13 @@ public class BlueTonic extends CustomPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new MinorBlueTonic();
+        return new MinorBlueTonic_P_TA();
     }
 
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 2;
+        return 1;
     }
 
     public void upgradePotion()

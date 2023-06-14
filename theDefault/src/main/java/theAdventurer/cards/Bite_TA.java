@@ -45,7 +45,7 @@ public class Bite_TA extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(m, p, new MarkPower(m, this.magicNumber), this.magicNumber));
         this.addToBot(new BiteAction(p, this.damage, this.damageTypeForTurn));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

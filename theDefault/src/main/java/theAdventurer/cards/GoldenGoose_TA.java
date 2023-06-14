@@ -14,6 +14,9 @@ import theAdventurer.characters.TheAdventurer;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class GoldenGoose_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(GoldenGoose_TA.class.getSimpleName());

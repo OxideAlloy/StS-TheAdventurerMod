@@ -65,6 +65,6 @@ public class LavaWallPower_TA extends AbstractPower implements CloneablePowerInt
 
     @Override
     public AbstractPower makeCopy() {
-        return new SatiatedPower_TA(owner, amount);
+        return new LavaWallPower_TA(owner, amount);
     }
 }

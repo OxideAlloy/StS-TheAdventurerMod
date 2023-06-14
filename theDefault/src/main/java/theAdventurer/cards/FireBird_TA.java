@@ -1,5 +1,6 @@
 package theAdventurer.cards;
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -15,6 +16,9 @@ import theAdventurer.powers.SautéPower_TA;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class FireBird_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(FireBird_TA.class.getSimpleName());
@@ -27,8 +31,8 @@ public class FireBird_TA extends AbstractDynamicCard {
 
     private static final int COST = 0;
 
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_PLUS_MAGIC = 2;
+    private static final int MAGIC = 5;
+    private static final int UPGRADE_PLUS_MAGIC = 3;
 
 
     public FireBird_TA() {

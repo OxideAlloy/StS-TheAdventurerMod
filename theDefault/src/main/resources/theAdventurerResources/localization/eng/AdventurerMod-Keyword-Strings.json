@@ -37,7 +37,8 @@
     "PROPER_NAME": "Satiated",
     "NAMES": [
       "satiated",
-      "Satiated"
+      "Satiated",
+      "Satiated:"
     ],
     "DESCRIPTION": "You do not draw cards from Foraging while Satiated."
   },

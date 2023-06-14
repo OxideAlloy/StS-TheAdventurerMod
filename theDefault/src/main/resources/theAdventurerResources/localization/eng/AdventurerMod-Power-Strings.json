@@ -28,6 +28,76 @@
                         " Sauté to the attacker."
                 ]
         },
+        "theAdventurer:CrystalPower_TA": {
+                "NAME": "Damage Reflection",
+                "DESCRIPTIONS": [
+                        "Whenever you are dealt damage, your attacker takes that much damage. "
+                ]
+        },
+        "theAdventurer:ApothecaryPower_TA": {
+                "NAME": "Apothecary",
+                "DESCRIPTIONS": [
+                        "Bottle cards deal ",
+                        " more damage."
+                ]
+        },
+        "theAdventurer:BlueMaskPower_TA": {
+                "NAME": "Many Faces",
+                "DESCRIPTIONS": [
+                        "Polymorph cards cost ",
+                        " less to play the turn they are drawn."
+                ]
+        },
+        "theAdventurer:BrownMaskPower_TA": {
+                "NAME": "Insatiable",
+                "DESCRIPTIONS": [
+                        "Satiated no longer prevents you from drawing cards with Forage."
+                ]
+        },
+        "theAdventurer:RedMaskPower_TA": {
+                "NAME": "Burning Rage",
+                "DESCRIPTIONS": [
+                        "At the end of your turn each enemy gains ",
+                        " Sauté."
+                ]
+        },
+        "theAdventurer:YellowMaskPower_TA": {
+                "NAME": "Golden",
+                "DESCRIPTIONS": [
+                        "Whenever you lose hp, gain ",
+                        " energy next turn."
+                ]
+        },
+        "theAdventurer:WhiteMaskPower_TA": {
+                "NAME": "Incubating",
+                "DESCRIPTIONS": [
+                        "Whenever you play an egg. Reduce it's hatch value by ",
+                        "."
+                ]
+        },
+        "theAdventurer:SpellBookPower_TA": {
+                "NAME": "Spell Book",
+                "DESCRIPTIONS": [
+                        "At the start of your turn apply ",
+                        " mark to a random enemy and then deal damage to each enemy equal to their mark."
+                ]
+        },
+        "theAdventurer:FoodFightPower_TA": {
+                "NAME": "Food Fighter",
+                "DESCRIPTIONS": [
+                        "Whenever you gain Satiated, gain ",
+                        " Block."
+                ]
+        },
+        "theAdventurer:IndigestionPower_TA": {
+                "NAME": "Indigestion",
+                "DESCRIPTIONS": [
+                        "Whenever you play a Forage card or use a Potion card. Each enemy gains ",
+                        " Sauté."
+                ]
+        },
+
+
 
 
 

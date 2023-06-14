@@ -17,17 +17,18 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.MonsterGroup;
+import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theAdventurer.cards.*;
 import theAdventurer.characters.TheAdventurer;
 import theAdventurer.events.IdentityCrisisEvent;
+import theAdventurer.monsters.targetDummy;
 import theAdventurer.potions.PlaceholderPotion;
-import theAdventurer.relics.BottledPlaceholderRelic;
-import theAdventurer.relics.DefaultClickableRelic;
-import theAdventurer.relics.PlaceholderRelic;
-import theAdventurer.relics.PlaceholderRelic2;
+import theAdventurer.relics.*;
 import theAdventurer.util.IDCheckDontTouchPls;
 import theAdventurer.util.TextureLoader;
 import theAdventurer.variables.DefaultCustomVariable;
@@ -110,21 +111,21 @@ public class TheAdventurerMod implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "theAdventurerResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "theAdventurerResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "theAdventurerResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY = "theAdventurerResources/images/512/Cardback_Adventurer_ATK_SKY.png";
+    private static final String SKILL_DEFAULT_GRAY = "theAdventurerResources/images/512/Cardback_Adventurer_SKL_SKY.png";
+    private static final String POWER_DEFAULT_GRAY = "theAdventurerResources/images/512/Cardback_Adventurer_PWR_SKY.png";
     
     private static final String ENERGY_ORB_DEFAULT_GRAY = "theAdventurerResources/images/512/card_default_gray_orb.png";
     private static final String CARD_ENERGY_ORB = "theAdventurerResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/Cardback_Adventurer_ATK_SKY.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/Cardback_Adventurer_SKL_SKY.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/Cardback_Adventurer_PWR_SKY.png";
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theAdventurerResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "theAdventurerResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theAdventurerResources/images/charSelect/DefaultCharacterPortraitBG.png";
+    private static final String THE_DEFAULT_BUTTON = "theAdventurerResources/images/charSelect/ButtonTA.png";
+    private static final String THE_DEFAULT_PORTRAIT = "theAdventurerResources/images/charSelect/AdventurerBackground.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "theAdventurerResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "theAdventurerResources/images/char/defaultCharacter/shoulder2.png";
     public static final String THE_DEFAULT_CORPSE = "theAdventurerResources/images/char/defaultCharacter/corpse.png";
@@ -359,6 +360,21 @@ public class TheAdventurerMod implements
 
         // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
+
+
+    // =============== /MONSTERS/ =================
+    //BaseMod.addMonster(ShoggothC.ID, () -> new ShoggothA(0, 0, 1));
+//
+//        BaseMod.addMonster("Shoggoth", () -> new MonsterGroup(new AbstractMonster[] {
+//        new ShoggothC(-350, 40),
+//                new ShoggothB(-40, 60),
+//                new ShoggothA(-60, 0),
+//                new ShoggothC(130, -30)
+//    }));
+//        BaseMod.addStrongMonsterEncounter(TheCity.ID, new MonsterInfo("Shoggoth", 10));
+    BaseMod.addMonster(targetDummy.ID, () -> new targetDummy(0,0));
+    BaseMod.addStrongMonsterEncounter(TheCity.ID, new MonsterInfo("targetDummy", 10));
+
     }
     
     // =============== / POST-INITIALIZE/ =================
@@ -393,17 +409,19 @@ public class TheAdventurerMod implements
         // in order to automatically differentiate which pool to add the relic too.
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheAdventurer.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheAdventurer.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheAdventurer.Enums.COLOR_GRAY);
-        
+//        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheAdventurer.Enums.COLOR_GRAY);
+//        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheAdventurer.Enums.COLOR_GRAY);
+//        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheAdventurer.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new WineSkinRelic_TA(), TheAdventurer.Enums.COLOR_GRAY);
+
+
         // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
+//        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see them in game
         // (the others are all starters so they're marked as seen in the character file)
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        UnlockTracker.markRelicAsSeen(WineSkinRelic_TA.ID);
         logger.info("Done adding relics!");
     }
     
@@ -486,7 +504,12 @@ public class TheAdventurerMod implements
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/AdventurerMod-Orb-Strings.json");
-        
+
+        // Monster Strings
+        BaseMod.loadCustomStringsFile(MonsterStrings.class,
+                getModID() + "Resources/localization/eng/AdventurerMod-Monster-Strings.json");
+        //BaseMod.loadCustomStringsFile(MonsterStrings.class, "conspire/localization/" + lang + "/conspire-monsters.json");
+
         logger.info("Done edittting strings");
     }
     

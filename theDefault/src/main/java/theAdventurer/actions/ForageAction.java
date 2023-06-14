@@ -25,7 +25,7 @@ public class ForageAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (!this.target.hasPower("theAdventurer:SatiatedPower_TA")) {
+        if (!this.target.hasPower("theAdventurer:SatiatedPower_TA") || this.target.hasPower("theAdventurer:BrownMaskPower_TA")) {
             this.addToTop(new DrawCardAction(this.target, magicNumber));
             this.addToBot(new ApplyPowerAction(this.target, this.target, new SatiatedPower_TA(this.target, this.magicNumber), this.magicNumber));
         }

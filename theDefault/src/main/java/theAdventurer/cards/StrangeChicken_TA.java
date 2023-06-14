@@ -14,10 +14,13 @@ import theAdventurer.characters.TheAdventurer;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class StrangeChicken_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(StrangeChicken_TA.class.getSimpleName());
-    public static final String IMG = makeCardPath("StrangeChicken_TA.png"); // TODO: Check img name
+    public static final String IMG = makeCardPath("StrangeChicken_TA.png");
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;

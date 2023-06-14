@@ -1,13 +1,13 @@
 
 skeleton.png
-size: 256,256
+size: 64,64
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-shoggothC
+TestSphere2
   rotate: false
   xy: 1, 1
-  size: 240, 204
-  orig: 240, 204
-  offset: 0, 0
+  size: 58, 58
+  orig: 72, 72
+  offset: 7, 7
   index: -1

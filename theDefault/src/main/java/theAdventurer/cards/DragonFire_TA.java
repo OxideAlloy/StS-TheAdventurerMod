@@ -19,12 +19,15 @@ import java.util.Iterator;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
+//THIS CARD IS NOT ADDED TO THE CARD POOL
+@AutoAdd.Ignore
+
 public class DragonFire_TA extends AbstractDynamicCard {
 
     public static final String ID = TheAdventurerMod.makeID(DragonFire_TA.class.getSimpleName());
     public static final String IMG = makeCardPath("DragonFire_TA.png");
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;

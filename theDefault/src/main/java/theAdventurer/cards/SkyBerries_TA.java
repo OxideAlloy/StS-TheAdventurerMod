@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.ForageAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -28,6 +29,7 @@ public class SkyBerries_TA extends AbstractDynamicCard {
     public SkyBerries_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

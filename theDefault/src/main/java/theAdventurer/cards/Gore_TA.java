@@ -44,7 +44,7 @@ public class Gore_TA extends AbstractDynamicCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         this.addToBot(new ApplyPowerAction(m, p, new GoredPower_TA(m, p, this.magicNumber), this.magicNumber));
-        this.addToBot(new PolymorphAction());
+        this.addToBot(new PolymorphAction(this));
     }
 
     @Override

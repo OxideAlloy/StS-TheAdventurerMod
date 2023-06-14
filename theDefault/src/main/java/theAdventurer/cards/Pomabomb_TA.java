@@ -38,6 +38,7 @@ public class Pomabomb_TA extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = MAGIC;
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override

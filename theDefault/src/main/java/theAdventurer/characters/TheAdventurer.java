@@ -26,6 +26,7 @@ import theAdventurer.cards.*;
 import theAdventurer.relics.DefaultClickableRelic;
 import theAdventurer.relics.PlaceholderRelic;
 import theAdventurer.relics.PlaceholderRelic2;
+import theAdventurer.relics.WineSkinRelic_TA;
 
 import java.util.ArrayList;
 
@@ -61,9 +62,9 @@ public class TheAdventurer extends CustomPlayer {
     // =============== BASE STATS =================
 
     public static final int ENERGY_PER_TURN = 3;
-    public static final int STARTING_HP = 75;
-    public static final int MAX_HP = 75;
-    public static final int STARTING_GOLD = 99;
+    public static final int STARTING_HP = 85;
+    public static final int MAX_HP = 85;
+    public static final int STARTING_GOLD = 5;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
 
@@ -195,15 +196,16 @@ public class TheAdventurer extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(PlaceholderRelic.ID);
+        retVal.add(WineSkinRelic_TA.ID);
         //retVal.add(PlaceholderRelic2.ID);
         //retVal.add(DefaultClickableRelic.ID);
 
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see them in game
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+//        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
+//        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
+//        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        UnlockTracker.markRelicAsSeen(WineSkinRelic_TA.ID);
 
         return retVal;
     }
@@ -211,7 +213,7 @@ public class TheAdventurer extends CustomPlayer {
     // character Select screen effect
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("ATTACK_DAGGER_1", 1.25f); // Sound Effect
+        CardCrawlGame.sound.playA("BUFF_1", 1.25f); // Sound Effect
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT,
                 false); // Screen Effect
     }
@@ -219,7 +221,7 @@ public class TheAdventurer extends CustomPlayer {
     // character Select on-button-press sound effect
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "ATTACK_DAGGER_1";
+        return "VO_GIANTHEAD_1B";
     }
 
     // Should return how much HP your maximum HP reduces by when starting a run at

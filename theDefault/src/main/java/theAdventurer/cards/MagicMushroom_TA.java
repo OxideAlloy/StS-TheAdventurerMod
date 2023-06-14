@@ -13,6 +13,7 @@ import theAdventurer.TheAdventurerMod;
 import theAdventurer.actions.ForageAction;
 import theAdventurer.actions.PotionExhumeAction;
 import theAdventurer.characters.TheAdventurer;
+import theAdventurer.util.CustomTags;
 
 import static theAdventurer.TheAdventurerMod.makeCardPath;
 
@@ -30,9 +31,12 @@ public class MagicMushroom_TA extends AbstractDynamicCard {
     public static final CardColor COLOR = TheAdventurer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
+    private static final int MAGIC = 1;
 
     public MagicMushroom_TA() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        magicNumber = baseMagicNumber = MAGIC;
+        tags.add(CustomTags.FOOD_CARD);
     }
 
     @Override
